@@ -1,0 +1,16 @@
+{
+    "name": "search-engine",
+    "version": "1.0.0",
+    "description": "A simple responsive web search engine",
+    "main": "server/app.js",
+    "scripts": {
+        "start": "node server/app.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "express": "^4.19.2"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

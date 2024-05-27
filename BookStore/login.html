@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Online Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Online Book Store</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="catalogue.php">Catalogue</a></li>
+                <li><a href="registration.html">Registration</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="login-section">
+        <div class="container">
+            <h2>Login to Your Account</h2>
+            <form action="login.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; Online Book Store</p>
+        </div>
+    </footer>
+</body>
+</html>

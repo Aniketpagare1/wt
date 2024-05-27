@@ -1,0 +1,8 @@
+POST http://localhost:8082/api/employee/save-record
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com"
+}

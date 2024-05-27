@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Simulation</title>
+    <style>
+        .led {
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            border-radius: 50%;
+            margin: 50px auto;
+            box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .led.on {
+            background-color: red;
+        }
+        
+        .led.off {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="led off" id="led"></div>
+    <button onclick="turnOn()">Turn On</button>
+    <button onclick="turnOff()">Turn Off</button>
+
+    <script>
+        function turnOn() {
+            document.getElementById('led').classList.add('on');
+            document.getElementById('led').classList.remove('off');
+        }
+
+        function turnOff() {
+            document.getElementById('led').classList.add('off');
+            document.getElementById('led').classList.remove('on');
+        }
+    </script>
+</body>
+</html>

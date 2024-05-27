@@ -1,0 +1,281 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Make the video cover the entire container */
+  z-index: -1;
+  background-color: aliceblue;
+
+}
+/* Style the header */
+header {
+  background-color: #1a1a28;
+
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header h6 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+/* Navbar */
+nav {
+  background-color: #333;
+  overflow: hidden;
+  float: left;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+/* Main content */
+main {
+  padding: 80px;
+  margin-top: 80px;
+}
+
+main h3 {
+  margin-top: 80px;
+  font-size: 24px;
+  color:#f0f0f0;
+}
+
+main p {
+  font-size: 20px;
+  line-height: 1.6;
+  color:#f0f0f0;
+ 
+}
+
+/* Style the footer */
+footer {
+  background-color: #1a1a28;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  nav, main {
+    width: 100%;
+  }
+}
+
+
+
+/* Skills section */
+#skills {
+  padding-top: 20px;
+  border-top: 2px solid #1a1a28;
+}
+
+.skill-category {
+  margin-top: 20px;
+}
+
+.skill-category h4 {
+  
+  color: #1a1a28;
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill {
+  width: 30%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.skill-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1a1a28;
+}
+
+
+#extra-curricular ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#extra-curricular li {
+  margin-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+}
+
+#extra-curricular li::before {
+  content: "\f058"; 
+  font-family: FontAwesome;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #1a1a28;
+}
+
+#contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#contact li {
+  margin-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+}
+
+#contact li::before {
+  font-family: FontAwesome;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+#contact .fa-phone-alt::before {
+  content: "\f879"; /* Font Awesome icon code for "fas fa-phone-alt" */
+  color: #1a1a28;
+}
+
+#contact .fa-envelope::before {
+  content: "\f0e0"; /* Font Awesome icon code for "fas fa-envelope" */
+  color: #1a1a28;
+}
+
+#contact .fa-map-marker-alt::before {
+  content: "\f3c5"; /* Font Awesome icon code for "fas fa-map-marker-alt" */
+  color: #1a1a28;
+}
+
+#contact .fa-linkedin::before {
+  content: "\f08c"; /* Font Awesome icon code for "fab fa-linkedin" */
+  color: #1a1a28;
+}
+
+#contact .fa-github::before {
+  content: "\f09b"; /* Font Awesome icon code for "fab fa-github" */
+  color: #1a1a28;
+}
+
+#contact .fa-instagram::before {
+  content: "\f16d"; /* Font Awesome icon code for "fab fa-instagram" */
+  color: #1a1a28;
+}
+
+img.profile-picture {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+/* Style the footer */
+footer {
+  background-color: #1a1a28;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.footer-content,
+.footer-social {
+  margin-bottom: 10px;
+}
+
+.footer-content p,
+.footer-social p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.contact-links,
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Use flexbox to arrange icons in a single line */
+  justify-content: center; /* Center icons horizontally */
+}
+
+.contact-links li,
+.social-links li {
+  margin-bottom: 5px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Additional styles to make icons visible in the footer */
+.social-links a:hover {
+  color: #42b983;
+}
+
+.social-links a:active {
+  color: #1e7047;
+}
+
+.fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+    
+    
+

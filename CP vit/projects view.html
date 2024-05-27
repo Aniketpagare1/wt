@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>VIT College Projects</title>
+</head>
+<body>
+
+<div class="container mt-5" style="border-color: black; border-style: outset; size: 20cm;">
+    <h2 class="text-center mb-4">Projects at VIT College</h2>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="myTabs">
+        <li class="nav-item">
+            <a class="nav-link active" id="sdp-tab" data-toggle="tab" href="#sdp">SDP</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="edi-tab" data-toggle="tab" href="#edi">EDI</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="dt-tab" data-toggle="tab" href="#dt">DT</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="course-tab" data-toggle="tab" href="#course">Course Projects</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content mt-3" style="background-color: black; border-style: outset; padding-left: 4%; padding-right: 4%; text-align: justify; border-top-left-radius: 5%; border-top-right-radius: 5%; border-bottom-left-radius: 5%; border-bottom-right-radius: 5%;">
+        <div class="tab-pane fade show active" id="sdp">
+            <h3 style="color:aliceblue">Software Development Project (SDP)</h3>
+            <p style="color:aliceblue">The Software Development Project (SDP) at VIT plays a crucial role in bridging theoretical knowledge with practical application. Through SDP, students engage in real-world software development scenarios, collaborating in teams to design, implement, and deploy software solutions. This hands-on experience not only sharpens technical skills but also cultivates teamwork, project management, and problem-solving abilities. SDP projects often mirror industry practices, providing students with a taste of the challenges and complexities inherent in professional software development..</p>
+        </div>
+        <div class="tab-pane fade" id="edi">
+            <h3 style="color:aliceblue">Engineering Design and Innovation (EDI)</h3>
+            <p style="color:aliceblue">The Engineering Design and Innovation (EDI) projects at VIT emphasize the integration of engineering principles with innovative thinking. Students undertaking EDI projects delve into the entire product development lifecycle, from ideation and conceptualization to prototyping and testing. These projects encourage a holistic approach to problem-solving, fostering creativity and the ability to design solutions that are not only technically sound but also address real-world needs. EDI projects thus prepare students to be forward-thinking engineers capable of contributing to advancements in technology and industry.</p>
+        </div>
+        <div class="tab-pane fade" id="dt">
+            <h3 style="color:aliceblue">Design Thinking (DT)</h3>
+            <p style="color:aliceblue">Design Thinking (DT) projects at VIT instill a human-centric approach to problem-solving. Emphasizing empathy, ideation, and prototyping, DT projects guide students in understanding end-users and developing solutions that truly meet their needs. This methodology transcends traditional engineering boundaries, encouraging interdisciplinary collaboration and fostering a mindset that prioritizes user experience. DT projects cultivate innovation, adaptability, and a keen awareness of the social and ethical implications of design choices.</p>
+        </div>
+        <div class="tab-pane fade" id="course">
+            <h3 style="color:aliceblue">Course Projects</h3>
+            <p style="color:aliceblue">Course projects at VIT encompass a diverse range of subjects and topics, serving as a dynamic platform for applying theoretical knowledge gained in classrooms. These projects are tailored to specific courses, challenging students to apply theoretical concepts in practical scenarios. Whether it's a project in computer science, electrical engineering, or any other discipline, course projects offer a structured environment for students to deepen their understanding of course material and develop essential skills. Additionally, they provide a foundation for more specialized projects, laying the groundwork for students to explore their interests and excel in their chosen fields.</p>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // Activate the tabs with JQuery
+    $(document).ready(function(){
+        $('#myTabs a').click(function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+        });
+    });
+</script>
+
+</body>
+</html>

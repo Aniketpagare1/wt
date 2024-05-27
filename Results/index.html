@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT Student Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Student Data</h2>
+        <form action="process.php" method="post">
+            <label for="roll_number">Roll Number:</label>
+            <input type="text" name="roll_number" required>
+
+           
+            <label for="subject1_mse">DAA MSE:</label>
+            <input type="number" name="subject1_mse" required>
+            <label for="subject1_ese">DAA ESE:</label>
+            <input type="number" name="subject1_ese" required>
+
+            <label for="subject2_mse">WT MSE:</label>
+            <input type="number" name="subject2_mse" required>
+            <label for="subject2_ese">WT ESE:</label>
+            <input type="number" name="subject2_ese" required>
+
+
+            <label for="subject3_mse">CC MSE:</label>
+            <input type="number" name="subject3_mse" required>
+            <label for="subject3_ese">CC ESE:</label>
+            <input type="number" name="subject3_ese" required>
+
+
+            <label for="subject4_mse">SDAM MSE:</label>
+            <input type="number" name="subject4_mse" required>
+            <label for="subject4_ese">SDAM ESE:</label>
+            <input type="number" name="subject4_ese" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

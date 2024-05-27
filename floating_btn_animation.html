@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Floating Buttons Animation</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .floating-btns {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .floating-btn {
+        width: 60px;
+        height: 60px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        text-align: center;
+        line-height: 60px;
+        font-size: 24px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .floating-btn:hover {
+        transform: translateY(-10px);
+    }
+</style>
+</head>
+<body>
+<div class="floating-btns">
+    <button class="floating-btn">1</button>
+    <button class="floating-btn">2</button>
+    <button class="floating-btn">3</button>
+</div>
+</body>
+</html>

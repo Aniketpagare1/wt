@@ -1,0 +1,83 @@
+.calendar {
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .calendar-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .calendar-header button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .calendar-header button:hover {
+    background-color: #0056b3;
+  }
+  
+  .calendar-body {
+    padding: 16px;
+  }
+  
+  .calendar-weekdays {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  
+  .calendar-weekdays div {
+    width: calc(100% / 7);
+  }
+  
+  .calendar-days {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .day {
+    width: calc(100% / 7);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .day.prev-next-month {
+    color: #aaa;
+  }
+  
+  .day.today {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .day:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
